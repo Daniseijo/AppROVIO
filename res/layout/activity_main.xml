@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.wowweelisw.MainActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/buttonUp"
+        android:layout_width="130dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="@string/button_up" />
+    
+    <LinearLayout
+        android:id="@+id/container2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+       
+	    <Button
+	        android:id="@+id/buttonRight"
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	       	android:layout_weight="1"
+	        android:gravity="center"	        
+	        android:text="@string/button_right" />
+
+	    <Button
+	        android:id="@+id/buttonLeft"
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        android:gravity="center"
+	        android:text="@string/button_left" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonDown"
+        android:layout_width="130dp"
+        android:layout_height="0dp"
+		android:layout_weight="1"
+        android:gravity="center"	
+        android:layout_gravity="center_horizontal"  
+        android:text="@string/button_down" />
+
+</LinearLayout>
